@@ -97,6 +97,7 @@ const CARD_SELECTION_ROLE_SCOPED = extractTaggedConst(workerSrc, 'CARD_SELECTION
 const FORWARD_FRAMING_GUARD = extractTaggedConst(workerSrc, 'FORWARD_FRAMING_GUARD');
 const CHAT_CLOSING_GUARD = extractTaggedConst(workerSrc, 'CHAT_CLOSING_GUARD');
 const CHAT_VOICE_GUARD = extractTaggedConst(workerSrc, 'CHAT_VOICE_GUARD');
+const FINAL_VOICE_AUDIT = extractTaggedConst(workerSrc, 'FINAL_VOICE_AUDIT');
 const PEOPLE_NAMING_GUARD = extractTaggedConst(workerSrc, 'PEOPLE_NAMING_GUARD');
 const SIGNAL_VS_REPORT_GUARD = extractTaggedConst(workerSrc, 'SIGNAL_VS_REPORT_GUARD');
 const COMPOSITION_COMPLETENESS_GUARD = extractTaggedConst(workerSrc, 'COMPOSITION_COMPLETENESS_GUARD');
@@ -125,8 +126,36 @@ export function buildRewriterPrompt() {
   return CARD_REWRITER_SYSTEM;
 }
 
+// Chat rewriter system prompt and pre-audit. Mirrors the worker's
+// applyChatRewriter logic so eval:live exercises the same compliance path
+// production traffic does. The pre-audit pattern list must stay in sync
+// with VOICE_VIOLATION_PATTERNS in worker.js.
+const CHAT_REWRITER_SYSTEM = extractTaggedConst(workerSrc, 'CHAT_REWRITER_SYSTEM');
+
+export function buildChatRewriterPrompt() {
+  return CHAT_REWRITER_SYSTEM;
+}
+
+const VOICE_VIOLATION_PATTERNS = [
+  /\bagainst\b/i,
+  /\bgaps?\b/i,
+  /[—–]/,
+  /\boutreach\b/i,
+  /\b(losses|loss|lost|shortfall|stalled|stalling|slipped|slipping|tightened|softened|weakened|declined|deteriorated|missed|fell\s+short|fell\s+behind|fell\s+from|fell\s+to|under\s+target|below\s+target|short\s+of)\b/i,
+  /\b(forecast\s+call|quota\s+coverage|late-stage\s+deal|CPL|ROAS|audience\s+refresh|creative\s+refresh|UTM|routing\s+SLA|Salesloft|connect\s+rate|reply\s+rate|AE-accepted|touch\s+3|touch\s+7|NRR|GRR|expansion\s+ARR|QBR|value\s+story|stakeholder\s+map|champion|multi-thread|renewal\s+pipeline|AUC|override\s+rate|playbook\s+completion|shadow\s+mode|calibration|ChurnZero|Gainsight|go-live|kickoff|sandbox|TTFV|implementation\s+milestone|use-case\s+capture|battlecard|Gong|win\s+review|close-reason|mandatory\s+field|exception\s+rate|stage\s+governance|dedup|Clari)\b/i,
+];
+
+export function detectVoiceViolations(replyText) {
+  if (typeof replyText !== 'string' || replyText.length === 0) return false;
+  for (const pattern of VOICE_VIOLATION_PATTERNS) {
+    if (pattern.test(replyText)) return true;
+  }
+  return false;
+}
+
 export const LENS_MODEL = extractModelId(workerSrc);
 export const REWRITER_MODEL = extractRewriterModelId(workerSrc) || LENS_MODEL;
+export const CHAT_REWRITER_MODEL = 'claude-opus-4-7';
 
 function interpolate(template, vars) {
   let out = template;
@@ -170,6 +199,7 @@ export function buildChatPrompt({ role = null, companyData = COMPANY_DATA } = {}
     PEOPLE_NAMING_GUARD,
     SOURCE_DISCLOSURE_GUARD,
     ARCHETYPE_PERSISTENCE_GUARD,
+    FINAL_VOICE_AUDIT,
   });
   return applyRoleOverride(out, role);
 }

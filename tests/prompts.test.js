@@ -288,7 +288,7 @@ describe('Invariant 12 — prompt-block constants are interpolated, not orphaned
   // sends it directly as the system prompt for the rewriter pass. It does
   // not need to be interpolated; instead it must be referenced as a value
   // in an Anthropic API call.
-  const SELF_SHIPPING_TEMPLATES = new Set(['CARD_REWRITER_SYSTEM']);
+  const SELF_SHIPPING_TEMPLATES = new Set(['CARD_REWRITER_SYSTEM', 'CHAT_REWRITER_SYSTEM']);
 
   test('at least 5 prompt-block consts are discovered (sanity check)', () => {
     assert.ok(

@@ -4,7 +4,7 @@
 
 ## 1. Who this archetype actually is
 
-The Marketing Strategist is the practitioner who owns where Atlas SaaS wins, loses, and is positioned in the market. They are responsible for messaging and positioning (making sure the company's story lands with the right buyers in the right frame), sales enablement (battlecards, objection handling, competitive playbooks), product launch execution (GTM readiness, launch campaigns, sales enablement for new releases), and pipeline quality (ensuring marketing-sourced opportunities are well-qualified and match the ideal customer profile).
+The Marketing Strategist is the practitioner who owns where the company wins, loses, and is positioned in the market. They are responsible for messaging and positioning (making sure the company's story lands with the right buyers in the right frame), sales enablement (battlecards, objection handling, competitive playbooks), product launch execution (GTM readiness, launch campaigns, sales enablement for new releases), and pipeline quality (ensuring marketing-sourced opportunities are well-qualified and match the ideal customer profile).
 
 At mid-market B2B SaaS companies in 2026 this role carries titles like Product Marketing Manager (PMM), Senior PMM, Director of Product Marketing, VP of Product Marketing, or Principal PMM. They report into the Marketing Leader or directly to a CPO at companies where product marketing is organizationally adjacent to product management. Some carry "Go-to-Market" or "Growth" in their title without the Product Marketing label.
 
@@ -36,7 +36,7 @@ The Marketing Strategist operates at the intersection of what the market believe
 
 ## 3. What they spend their time on
 
-**Weekly:** deal-outcome review, which deals closed, which were lost, which involved competitors, and what the close reasons say. Competitive landscape scan, new announcements, funding rounds, product changes from Beacon Systems, Northstar Platform, and Verge IO. Battlecard and enablement asset updates where new data warrants a rewrite. Message resonance check, does the discovery call data (Gong, call-tracking) show the intended frames landing?
+**Weekly:** deal-outcome review, which deals closed, which were lost, which involved competitors, and what the close reasons say. Competitive landscape scan, new announcements, funding rounds, product changes from the named competitors in the company's market. Battlecard and enablement asset updates where new data warrants a rewrite. Message resonance check, does the discovery call data (Gong, call-tracking) show the intended frames landing?
 
 **Monthly:** Full competitive positioning assessment. ICP validation, are this month's new customers the customers we wrote the positioning for? Launch readiness scoring for upcoming product releases. Earned media analysis from recent launches. Cross-functional sync with CS on exit interview themes and retention signals that feed positioning.
 
@@ -95,7 +95,7 @@ The Marketing Strategist is the person ensuring that positioning, battlecards, a
 
 **Conflating marketing strategy with demand generation.** The Marketing Strategist often has to fight internally to protect the distinction between their positioning work and the demand gen function that generates the leads. Collapsing the two in an analysis or a card signals a misunderstanding of where the value is created.
 
-**Presenting competitive intelligence without specificity.** "Competitors are becoming more aggressive" is noise. "Verge IO appeared in 24% of Q2 competitive deals, up from 11% in Q1, following a $40M Series B in March" is signal. The Marketing Strategist has zero patience for vague competitive assertions.
+**Presenting competitive intelligence without specificity.** "Competitors are becoming more aggressive" is noise. "[Competitor] appeared in 24% of Q2 competitive deals, up from 11% in Q1, following a $40M Series B in March" is signal. The Marketing Strategist has zero patience for vague competitive assertions.
 
 **Suggesting NPS or satisfaction scores measure positioning effectiveness.** Positioning is measured in win rates, competitive head-to-head outcomes, message resonance in discovery calls, and ICP match rate on new logos. None of those are NPS.
 
@@ -117,7 +117,7 @@ The Marketing Strategist's mental model separates signals that look similar but 
 
 **Competitive win rate is distinct from battlecard utilization.** A 12-point win rate lift on Competitor A deals is an outcome signal (positioning worked or the competitor faltered). Battlecard utilization climbing to 61% of Competitor A opps is a behavior signal (reps are using the enablement). The two can move independently: utilization can be high while win rate stagnates (the battlecard isn't effective), or win rate can lift in a window where utilization didn't change (market conditions, not enablement, drove the outcome). Surface both when the data supports both; do not fold one into the other.
 
-**Competitor emergence is distinct from competitive outcome.** Verge IO appearing in 24% of Q2 deals is a market-presence signal, they are getting into more conversations. It is NOT a win rate signal, which requires knowing how many of those deals closed and whether they won. Both observations are worth surfacing independently when the data supports the distinction.
+**Competitor emergence is distinct from competitive outcome.** A competitor appearing in 24% of Q2 deals is a market-presence signal, they are getting into more conversations. It is NOT a win rate signal, which requires knowing how many of those deals closed and whether they won. Both observations are worth surfacing independently when the data supports the distinction.
 
 **Message resonance is distinct from positioning win rate.** "Speed-to-value" re-stated on 62% of discovery calls is a resonance signal from Gong transcript analysis, prospects are picking up the frame. Whether that frame ultimately produces better close rates is a downstream outcome that takes a quarter to measure. Resonance and win rate can differ: a frame that resonates strongly in discovery may still fail at the evaluation stage for other reasons.
 

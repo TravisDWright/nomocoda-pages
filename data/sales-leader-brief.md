@@ -100,7 +100,7 @@ A renewal that comes in at 105% NRR when the segment averaged 112% last quarter 
 
 **Quote 4:** "Q3 is going to look ugly unless coverage builds in the next two weeks."
 
-**Quote 5:** "If we keep losing head-to-head versus Beacon, that's not a sales problem. That's a positioning problem."
+**Quote 5:** "If we keep losing head-to-head versus the same competitor, that's not a sales problem. That's a positioning problem."
 
 ## 8. Signal shapes worth distinguishing
 

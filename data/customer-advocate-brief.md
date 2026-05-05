@@ -4,7 +4,7 @@
 
 ## 1. Who this archetype actually is
 
-The Customer Advocate is the CSM, the person who owns the relationship between Atlas SaaS and a named book of accounts. They are accountable for renewal readiness, expansion identification, and making sure every account they carry is seeing enough value to stay. Where the Customer Leader owns the portfolio number, the Customer Advocate owns the individual accounts that make up that number.
+The Customer Advocate is the CSM, the person who owns the relationship between the company and a named book of accounts. They are accountable for renewal readiness, expansion identification, and making sure every account they carry is seeing enough value to stay. Where the Customer Leader owns the portfolio number, the Customer Advocate owns the individual accounts that make up that number.
 
 Their world is measured in health scores, QBR completion rates, stakeholder maps, and the quality of the relationships they have maintained. A good week is a QBR that surfaces new stakeholders, an early-renewal conversation that a green account welcomed, and a usage spike that converted into an expansion track. A bad week is discovering that the champion at a key account went quiet two months ago and nobody caught it, or a renewal conversation that surfaces budget pressure that had been building silently in the background.
 

@@ -103,7 +103,7 @@ The model uses login frequency as a proxy for product engagement because Mixpane
 
 **Quote 4:** "Product telemetry is now real-time. The health model sees a usage spike within minutes instead of three days later. That's the integration change I've been waiting for -- the model can finally react to actual engagement patterns, not batch-delayed approximations of them."
 
-**Quote 5:** "The Beacon Logistics early renewal connected directly back to the Custom Permissions launch in March. The pipeline shows it: feature launch on March 8, health score green for 21 consecutive days, early renewal conversation opened April 2, contract signed April 14. That's the cross-entity attribution story the model is built to surface."
+**Quote 5:** "An early renewal this quarter connected directly back to a feature launch the customer had flagged the prior quarter. The pipeline shows it: feature launch on day zero, health score green for 21 consecutive days, early renewal conversation opened in week four, contract signed in week six. That's the cross-entity attribution story the model is built to surface."
 
 ## 8. Signal shapes worth distinguishing
 
